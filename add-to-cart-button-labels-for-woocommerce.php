@@ -3,12 +3,12 @@
 Plugin Name: Add to Cart Button Labels for WooCommerce
 Plugin URI: https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/
 Description: Customize "Add to cart" button labels in WooCommerce. Beautifully.
-Version: 2.0.1
-Author: Algoritmika Ltd
-Author URI: https://algoritmika.com
+Version: 2.0.2-dev
+Author: WPFactory
+Author URI: https://wpfactory.com
 Text Domain: add-to-cart-button-labels-for-woocommerce
 Domain Path: /langs
-WC tested up to: 6.3
+WC tested up to: 7.0
 */
 
 defined( 'ABSPATH' ) || exit;
@@ -29,7 +29,7 @@ if ( 'add-to-cart-button-labels-for-woocommerce.php' === basename( __FILE__ ) ) 
 	}
 }
 
-defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION' ) || define( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION', '2.0.1' );
+defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION' ) || define( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION', '2.0.2-dev-20221103-2239' );
 
 defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE' ) || define( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE', __FILE__ );
 
