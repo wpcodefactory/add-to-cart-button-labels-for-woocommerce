@@ -1,43 +1,11 @@
-# Copyright (C) 2022 WPFactory
-# This file is distributed under the same license as the Add to Cart Button Labels for WooCommerce Pro plugin.
-msgid ""
-msgstr ""
-"Project-Id-Version: add-to-cart-button-labels-for-woocommerce 2.0.2-dev\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/add-to-cart-button-labels-for-woocommerce\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-11-04T01:35:11+01:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.4.0\n"
-"X-Domain: add-to-cart-button-labels-for-woocommerce\n"
-
-#. Plugin Name of the plugin
-msgid "Add to Cart Button Labels for WooCommerce Pro"
-msgstr ""
-
-#. Plugin URI of the plugin
-msgid "https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/"
-msgstr ""
-
-#. Description of the plugin
-msgid "Customize \"Add to cart\" button labels in WooCommerce. Beautifully."
-msgstr ""
-
-#. Author of the plugin
-msgid "WPFactory"
-msgstr ""
-
-#. Author URI of the plugin
-msgid "https://wpfactory.com"
-msgstr ""
-
 #: includes/class-alg-wc-atcbl-shortcodes.php:114
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:72
 #: includes/sections/class-alg-wc-atcbl-per-user.php:83
 msgid "Guest"
+msgstr ""
+
+#: includes/class-alg-wc-atcbl.php:144
+msgid "Settings"
 msgstr ""
 
 #: includes/class-alg-wc-atcbl.php:147
@@ -49,7 +17,9 @@ msgid "All Products"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-all-products.php:26
-msgid "This section lets you set \"Add to cart\" button text for all products at once."
+msgid ""
+"This section lets you set \"Add to cart\" button text for all products at "
+"once."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-all-products.php:49
@@ -100,10 +70,13 @@ msgid "Per Product Category"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-category.php:26
-msgid "This section lets you set \"Add to cart\" button text on per product category basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per product "
+"category basis."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-category.php:62
+#, php-format
 msgid "Category #%d"
 msgstr ""
 
@@ -135,6 +108,7 @@ msgstr ""
 #: includes/sections/class-alg-wc-atcbl-per-tag.php:129
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:114
 #: includes/sections/class-alg-wc-atcbl-per-user.php:124
+#, php-format
 msgid "Enable %s"
 msgstr ""
 
@@ -142,6 +116,7 @@ msgstr ""
 #: includes/sections/class-alg-wc-atcbl-per-tag.php:130
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:115
 #: includes/sections/class-alg-wc-atcbl-per-user.php:125
+#, php-format
 msgid "group #%d"
 msgstr ""
 
@@ -161,7 +136,9 @@ msgid "Per Product Type & Condition"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:26
-msgid "This section lets you set \"Add to cart\" button text for various products types and various conditions."
+msgid ""
+"This section lets you set \"Add to cart\" button text for various products "
+"types and various conditions."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:108
@@ -169,6 +146,7 @@ msgid "Ignored if blank."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:109
+#, php-format
 msgid "Default: %s"
 msgstr ""
 
@@ -272,7 +250,9 @@ msgid "Per Product"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product.php:26
-msgid "This section lets you set \"Add to cart\" button text on per individual product basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per individual "
+"product basis."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product.php:57
@@ -280,7 +260,8 @@ msgid "Per Product Options"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product.php:59
-msgid "When enabled, label for each product can be set on \"Edit product\" page."
+msgid ""
+"When enabled, label for each product can be set on \"Edit product\" page."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product.php:63
@@ -292,10 +273,13 @@ msgid "Per Product Tag"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-tag.php:26
-msgid "This section lets you set \"Add to cart\" button text on per product tag basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per product tag "
+"basis."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-tag.php:71
+#, php-format
 msgid "Tag #%d"
 msgstr ""
 
@@ -320,7 +304,8 @@ msgid "Per User Role"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:26
-msgid "This section lets you set \"Add to cart\" button text on per user role basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per user role basis."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:77
@@ -337,6 +322,7 @@ msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:109
 #: includes/sections/class-alg-wc-atcbl-per-user.php:119
+#, php-format
 msgid "Group #%d"
 msgstr ""
 
@@ -349,7 +335,8 @@ msgid "Per User"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user.php:26
-msgid "This section lets you set \"Add to cart\" button text on per user basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per user basis."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user.php:87
@@ -398,6 +385,7 @@ msgid "Shortcodes"
 msgstr ""
 
 #: includes/settings/class-alg-wc-atcbl-settings-section.php:59
+#, php-format
 msgid "You can use shortcodes in all labels: %s"
 msgstr ""
 
