@@ -4,11 +4,11 @@
 msgid "Guest"
 msgstr ""
 
-#: includes/class-alg-wc-atcbl.php:144
+#: includes/class-alg-wc-atcbl.php:161
 msgid "Settings"
 msgstr ""
 
-#: includes/class-alg-wc-atcbl.php:147
+#: includes/class-alg-wc-atcbl.php:164
 msgid "Go Pro"
 msgstr ""
 

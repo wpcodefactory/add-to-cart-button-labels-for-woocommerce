@@ -2,7 +2,7 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Main Class
  *
- * @version 2.0.0
+ * @version 2.0.3
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
@@ -49,7 +49,7 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	/**
 	 * Alg_WC_Add_To_Cart_Button_Labels Constructor.
 	 *
-	 * @version 2.0.0
+	 * @version 2.0.3
 	 * @since   1.0.0
 	 *
 	 * @access  public
@@ -64,6 +64,9 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 		// Set up localisation
 		add_action( 'init', array( $this, 'localize' ) );
 
+		// Declare compatibility with custom order tables for WooCommerce
+		add_action( 'before_woocommerce_init', array( $this, 'wc_declare_compatibility' ) );
+
 		// Pro
 		if ( 'add-to-cart-button-labels-for-woocommerce-pro.php' === basename( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) ) {
 			require_once( 'pro/class-alg-wc-atcbl-pro.php' );
@@ -77,6 +80,20 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 			$this->admin();
 		}
 
+	}
+
+	/**
+	 * wc_declare_compatibility.
+	 *
+	 * @version 2.0.3
+	 * @since   2.0.3
+	 *
+	 * @see     https://github.com/woocommerce/woocommerce/wiki/High-Performance-Order-Storage-Upgrade-Recipe-Book#declaring-extension-incompatibility
+	 */
+	function wc_declare_compatibility() {
+		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE, true );
+		}
 	}
 
 	/**
