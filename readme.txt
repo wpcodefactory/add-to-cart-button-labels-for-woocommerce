@@ -1,9 +1,9 @@
 === Add to Cart Button Labels for WooCommerce ===
-Contributors: wpcodefactory, algoritmika, anbinder
+Contributors: wpcodefactory, algoritmika, anbinder, omardabbas, kousikmukherjeeli
 Tags: woocommerce, add to cart, woo commerce
 Requires at least: 4.4
-Tested up to: 6.1
-Stable tag: 2.0.3
+Tested up to: 6.2
+Stable tag: 2.0.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -43,6 +43,10 @@ Plugin is **WPML/Polylang compatible**, i.e. you can set different labels for di
 3. Start by visiting plugin settings at "WooCommerce > Settings > Add to Cart Button Labels".
 
 == Changelog ==
+
+= 2.0.4 - 18/06/2023 =
+* WC tested up to: 7.8.
+* Tested up to: 6.2.
 
 = 2.0.3 - 14/12/2022 =
 * Dev - Compatibility with custom order tables for WooCommerce (High-Performance Order Storage (HPOS)) declared.
