@@ -1,9 +1,9 @@
-=== Add to Cart Button Labels for WooCommerce ===
+=== Customize Add to Cart Button Text for WooCommerce ===
 Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
 Tags: woocommerce, add to cart, woo commerce
 Requires at least: 4.4
-Tested up to: 6.3
-Stable tag: 2.0.7
+Tested up to: 6.4
+Stable tag: 2.0.8
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -11,7 +11,7 @@ Customize "Add to cart" button labels in WooCommerce. Beautifully.
 
 == Description ==
 
-**Add to Cart Button Labels for WooCommerce** plugin lets you change text for *Add to cart* button.
+**Customize Add to Cart Button Text for WooCommerce** plugin lets you change text for *Add to cart* button.
 
 ### &#9989; Main Features ###
 
@@ -43,6 +43,11 @@ Plugin is **WPML/Polylang compatible**, i.e. you can set different labels for di
 3. Start by visiting plugin settings at "WooCommerce > Settings > Add to Cart Button Labels".
 
 == Changelog ==
+
+= 2.0.8 - 23/11/2023 =
+* WC tested up to: 8.3.
+* Tested up to: 6.4.
+* Update plugin name.
 
 = 2.0.7 - 21/09/2023 =
 * update wp.org logo
