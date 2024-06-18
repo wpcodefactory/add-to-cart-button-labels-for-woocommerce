@@ -2,13 +2,13 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Meta Boxes Settings
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   1.3.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Settings_Meta_Boxes' ) ) :
 
@@ -36,8 +36,10 @@ class Alg_WC_Add_To_Cart_Button_Labels_Settings_Meta_Boxes {
 		if ( ! isset( $_POST['alg_wc_custom_add_to_cart_save_post'] ) ) {
 			return;
 		}
-		update_post_meta( $post_id, '_' . 'alg_wc_add_to_cart_button_labels_' . 'single',  wp_kses_post( trim( $_POST[ 'alg_wc_add_to_cart_button_labels_' . 'single' ] ) ) );
-		update_post_meta( $post_id, '_' . 'alg_wc_add_to_cart_button_labels_' . 'archive', wp_kses_post( trim( $_POST[ 'alg_wc_add_to_cart_button_labels_' . 'archive' ] ) ) );
+		update_post_meta( $post_id, '_' . 'alg_wc_add_to_cart_button_labels_' . 'single',
+			wp_kses_post( trim( $_POST[ 'alg_wc_add_to_cart_button_labels_' . 'single' ] ) ) );
+		update_post_meta( $post_id, '_' . 'alg_wc_add_to_cart_button_labels_' . 'archive',
+			wp_kses_post( trim( $_POST[ 'alg_wc_add_to_cart_button_labels_' . 'archive' ] ) ) );
 	}
 
 	/**

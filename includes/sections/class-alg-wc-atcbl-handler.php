@@ -1,18 +1,58 @@
 <?php
 /**
- * Add to Cart Button Labels for WooCommerce - X Class
+ * Add to Cart Button Labels for WooCommerce - Handler Class
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   2.0.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Handler' ) ) :
 
 class Alg_WC_Add_To_Cart_Button_Labels_Handler {
+
+	/**
+	 * id.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $id;
+
+	/**
+	 * desc.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $desc;
+
+	/**
+	 * title.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $title;
+
+	/**
+	 * options.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $options;
+
+	/**
+	 * labels.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $labels;
 
 	/**
 	 * Constructor.
@@ -85,7 +125,7 @@ class Alg_WC_Add_To_Cart_Button_Labels_Handler {
 	 * @version 2.0.0
 	 * @since   1.1.0
 	 *
-	 * @todo    [maybe] (dev) just product id (i.e. no parent for variation)
+	 * @todo    (dev) just product id (i.e., no parent for variation)
 	 */
 	function get_product_or_variation_parent_id( $product ) {
 		return ( $this->is_wc_version_below_3() ? $product->id : ( $product->is_type( 'variation' ) ? $product->get_parent_id() : $product->get_id() ) );

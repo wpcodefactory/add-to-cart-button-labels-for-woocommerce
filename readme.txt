@@ -1,9 +1,9 @@
 === Customize Add to Cart Button Text for WooCommerce ===
-Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
+Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas, kousikmukherjeeli
 Tags: woocommerce, add to cart, woo commerce
 Requires at least: 4.4
-Tested up to: 6.4
-Stable tag: 2.0.8
+Tested up to: 6.5
+Stable tag: 2.1.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,10 +17,10 @@ Customize "Add to cart" button labels in WooCommerce. Beautifully.
 
 **Add to cart** labels can be set:
 
-* For **individual products** (i.e. on per product basis).
+* For **individual products** (i.e., on per product basis).
 * For **all products** at once.
 * By **product category** and/or by **product tag**.
-* By **view** (i.e. single product view and archives (e.g. category, shop) view).
+* By **view** (i.e., single product view and archives (e.g., category, shop) view).
 * By **product type** (simple, variable, external, grouped, other).
 * By **condition** (standard product, free product, product with empty price, product is already in cart, and more).
 * By **user role** and/or by individual **user**.
@@ -29,12 +29,16 @@ Additionally, you can use **shortcodes** in labels, for example, show current pr
 
 `Buy now for [alg_wc_atcbl_product_price]`
 
-Plugin is **WPML/Polylang compatible**, i.e. you can set different labels for different languages on a multi-language sites.
+Plugin is **WPML/Polylang compatible**, i.e., you can set different labels for different languages on a multi-language sites.
 
 ### &#128472; Feedback ###
 
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
 * [Visit plugin site](https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/).
+
+### &#8505; More ###
+
+* The plugin is **"High-Performance Order Storage (HPOS)"** compatible.
 
 == Installation ==
 
@@ -44,16 +48,24 @@ Plugin is **WPML/Polylang compatible**, i.e. you can set different labels for di
 
 == Changelog ==
 
+= 2.1.0 - 18/06/2024 =
+* Fix - Declaring HPOS compatibility for the free plugin version, even if the Pro version is activated.
+* Dev - PHP 8.2 compatibility - "Creation of dynamic property is deprecated" notice fixed.
+* Dev - Code refactoring.
+* WC tested up to: 8.9.
+* Tested up to: 6.5.
+* WooCommerce added to the "Requires Plugins" (plugin header).
+
 = 2.0.8 - 23/11/2023 =
 * WC tested up to: 8.3.
 * Tested up to: 6.4.
-* Update plugin name.
+* Plugin name updated.
 
 = 2.0.7 - 21/09/2023 =
-* update wp.org logo
+* wp.org logo updated.
 
 = 2.0.6 - 21/09/2023 =
-* update change log
+* Changelog updated.
 
 = 2.0.5 - 21/09/2023 =
 * WC tested up to: 8.1.
@@ -115,7 +127,7 @@ Plugin is **WPML/Polylang compatible**, i.e. you can set different labels for di
 = 1.2.0 - 22/11/2018 =
 * Dev - "All Products" section added.
 * Dev - Per Product Type & Condition - "On sale" condition options added.
-* Dev - Per Product Type & Condition - Options re-checked (i.e. added and/or removed) for all product types and conditions.
+* Dev - Per Product Type & Condition - Options re-checked (i.e., added and/or removed) for all product types and conditions.
 * Dev - "Raw" input is now allowed in admin label settings.
 * Dev - Admin settings restyled and descriptions updated.
 * Dev - Major code refactoring.

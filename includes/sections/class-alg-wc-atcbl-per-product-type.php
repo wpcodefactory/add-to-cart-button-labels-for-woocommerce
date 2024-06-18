@@ -2,17 +2,25 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Per Product Type Class
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Per_Product_Type' ) ) :
 
 class Alg_WC_Add_To_Cart_Button_Labels_Per_Product_Type extends Alg_WC_Add_To_Cart_Button_Labels_Handler {
+
+	/**
+	 * default_values.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $default_values;
 
 	/**
 	 * Constructor.
@@ -33,7 +41,7 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Product_Type extends Alg_WC_Add_To_Ca
 	 * @version 2.0.0
 	 * @since   1.0.0
 	 *
-	 * @todo    [later] (feature) variable products: per variation, e.g. "already in cart" for single view
+	 * @todo    (feature) variable products: per variation, e.g., "already in cart" for single view
 	 */
 	function button_text( $text, $single_or_archives ) {
 

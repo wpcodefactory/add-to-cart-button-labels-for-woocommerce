@@ -2,17 +2,41 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Section Settings
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Settings_Section' ) ) :
 
 class Alg_WC_Add_To_Cart_Button_Labels_Settings_Section {
+
+	/**
+	 * id.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $id;
+
+	/**
+	 * desc.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $desc;
+
+	/**
+	 * section.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $section;
 
 	/**
 	 * Constructor.

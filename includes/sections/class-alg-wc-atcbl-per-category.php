@@ -2,13 +2,13 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Per Category Class
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Per_Category' ) ) :
 
@@ -68,8 +68,8 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Category extends Alg_WC_Add_To_Cart_B
 	 * @version 2.0.0
 	 * @since   1.0.0
 	 *
-	 * @todo    [next] (dev) WPML: `suppress_filter`?
-	 * @todo    [next] (feature) "Admin group title (optional)"
+	 * @todo    (dev) WPML: `suppress_filter`?
+	 * @todo    (feature) "Admin group title (optional)"
 	 */
 	function get_settings() {
 

@@ -2,13 +2,13 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Per Tag Class
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   2.0.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Per_Tag' ) ) :
 
@@ -77,8 +77,8 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Tag extends Alg_WC_Add_To_Cart_Button
 	 * @version 2.0.0
 	 * @since   2.0.0
 	 *
-	 * @todo    [next] (dev) WPML: `suppress_filter`?
-	 * @todo    [next] (feature) "Admin group title (optional)"
+	 * @todo    (dev) WPML: `suppress_filter`?
+	 * @todo    (feature) "Admin group title (optional)"
 	 */
 	function get_settings() {
 
@@ -140,7 +140,10 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Tag extends Alg_WC_Add_To_Cart_Button
 					'type'     => 'multiselect',
 					'class'    => 'chosen_select',
 					'options'  => ( ! empty( $_product_tags[ $i ] ) ?
-						array_replace( array_combine( $_product_tags[ $i ], array_map( array( $this, 'get_settings_lost_term_name' ), $_product_tags[ $i ] ) ), $product_tags ) :
+						array_replace(
+							array_combine( $_product_tags[ $i ], array_map( array( $this, 'get_settings_lost_term_name' ), $_product_tags[ $i ] ) ),
+							$product_tags
+						) :
 						$product_tags ),
 				),
 				array(

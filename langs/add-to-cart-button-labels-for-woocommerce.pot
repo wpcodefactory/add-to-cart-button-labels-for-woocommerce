@@ -1,410 +1,410 @@
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\class-alg-wc-atcbl-shortcodes.php:114
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:72
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:83
+#: includes/class-alg-wc-atcbl-shortcodes.php:145
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:80
+#: includes/sections/class-alg-wc-atcbl-per-user.php:91
 msgid "Guest"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\class-alg-wc-atcbl.php:161
+#: includes/class-alg-wc-atcbl.php:186
 msgid "Settings"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\class-alg-wc-atcbl.php:164
+#: includes/class-alg-wc-atcbl.php:189
 msgid "Go Pro"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:25
+#: includes/sections/class-alg-wc-atcbl-all-products.php:25
 msgid "All Products"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:26
+#: includes/sections/class-alg-wc-atcbl-all-products.php:26
 msgid ""
 "This section lets you set \"Add to cart\" button text for all products at "
 "once."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:49
+#: includes/sections/class-alg-wc-atcbl-all-products.php:50
 msgid "All Products Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:55
+#: includes/sections/class-alg-wc-atcbl-all-products.php:56
 msgid "All products labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:56
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:89
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:244
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product.php:64
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:99
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:84
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:94
+#: includes/sections/class-alg-wc-atcbl-all-products.php:57
+#: includes/sections/class-alg-wc-atcbl-per-category.php:89
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:252
+#: includes/sections/class-alg-wc-atcbl-per-product.php:67
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:99
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:92
+#: includes/sections/class-alg-wc-atcbl-per-user.php:102
 msgid "Enable section"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:62
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:139
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:225
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:147
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:130
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:140
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-meta-boxes.php:69
+#: includes/sections/class-alg-wc-atcbl-all-products.php:63
+#: includes/sections/class-alg-wc-atcbl-per-category.php:139
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:233
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:150
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:138
+#: includes/sections/class-alg-wc-atcbl-per-user.php:148
+#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:71
 msgid "Single product page"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:63
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:72
+#: includes/sections/class-alg-wc-atcbl-all-products.php:64
+#: includes/sections/class-alg-wc-atcbl-all-products.php:73
 msgid "Ignored if empty."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-all-products.php:71
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:147
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:226
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:155
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:138
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:148
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-meta-boxes.php:70
+#: includes/sections/class-alg-wc-atcbl-all-products.php:72
+#: includes/sections/class-alg-wc-atcbl-per-category.php:147
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:234
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:158
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:146
+#: includes/sections/class-alg-wc-atcbl-per-user.php:156
+#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:72
 msgid "Shop page"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:25
+#: includes/sections/class-alg-wc-atcbl-per-category.php:25
 msgid "Per Product Category"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:26
+#: includes/sections/class-alg-wc-atcbl-per-category.php:26
 msgid ""
 "This section lets you set \"Add to cart\" button text on per product "
 "category basis."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:62
+#: includes/sections/class-alg-wc-atcbl-per-category.php:62
 #, php-format
 msgid "Category #%d"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:82
+#: includes/sections/class-alg-wc-atcbl-per-category.php:82
 msgid "Per Category Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:88
+#: includes/sections/class-alg-wc-atcbl-per-category.php:88
 msgid "Per product category labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:96
+#: includes/sections/class-alg-wc-atcbl-per-category.php:96
 msgid "Total category groups"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:97
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:107
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:92
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:102
+#: includes/sections/class-alg-wc-atcbl-per-category.php:97
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:107
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:100
+#: includes/sections/class-alg-wc-atcbl-per-user.php:110
 msgid "Click \"Save changes\" after you update this number."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:115
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:124
+#: includes/sections/class-alg-wc-atcbl-per-category.php:115
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:124
 msgid "Group"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:120
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:129
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:114
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:124
+#: includes/sections/class-alg-wc-atcbl-per-category.php:120
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:129
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:122
+#: includes/sections/class-alg-wc-atcbl-per-user.php:132
 #, php-format
 msgid "Enable %s"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:121
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:130
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:115
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:125
+#: includes/sections/class-alg-wc-atcbl-per-category.php:121
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:130
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:123
+#: includes/sections/class-alg-wc-atcbl-per-user.php:133
 #, php-format
 msgid "group #%d"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:122
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:131
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:116
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:126
+#: includes/sections/class-alg-wc-atcbl-per-category.php:122
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:131
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:124
+#: includes/sections/class-alg-wc-atcbl-per-user.php:134
 msgid "Enable"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-category.php:128
+#: includes/sections/class-alg-wc-atcbl-per-category.php:128
 msgid "Categories"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:25
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:33
 msgid "Per Product Type & Condition"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:26
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:34
 msgid ""
 "This section lets you set \"Add to cart\" button text for various products "
 "types and various conditions."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:108
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:116
 msgid "Ignored if blank."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:109
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:117
 #, php-format
 msgid "Default: %s"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:134
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:135
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:138
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:139
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:142
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:143
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:149
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:150
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:155
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:159
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:163
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:167
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:191
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:197
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:198
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:201
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:202
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:205
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:206
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:212
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:213
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:142
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:143
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:146
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:147
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:150
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:151
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:157
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:158
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:163
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:167
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:171
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:175
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:199
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:205
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:206
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:209
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:210
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:213
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:214
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:220
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:221
 msgid "Add to cart"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:146
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:209
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:154
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:217
 msgid "Read more"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:156
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:160
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:164
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:168
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:164
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:168
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:172
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:176
 msgid "Select options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:173
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:174
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:177
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:178
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:181
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:182
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:185
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:186
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:181
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:182
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:185
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:186
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:189
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:190
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:193
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:194
 msgid "Buy product"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:192
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:200
 msgid "View products"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:218
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:226
 msgid "Simple Products"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:219
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:227
 msgid "Variable Products"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:220
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:228
 msgid "External Products"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:221
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:229
 msgid "Grouped Products"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:222
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:230
 msgid "Other Products"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:230
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:238
 msgid "On sale"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:231
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:239
 msgid "Free product"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:232
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:240
 msgid "Empty price"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:233
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:241
 msgid "Already in cart"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:237
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:245
 msgid "Per Product Type & Condition Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product-type.php:243
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:251
 msgid "Per product type & condition labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product.php:25
+#: includes/sections/class-alg-wc-atcbl-per-product.php:25
 msgid "Per Product"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product.php:26
+#: includes/sections/class-alg-wc-atcbl-per-product.php:26
 msgid ""
 "This section lets you set \"Add to cart\" button text on per individual "
 "product basis."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product.php:57
+#: includes/sections/class-alg-wc-atcbl-per-product.php:59
 msgid "Per Product Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product.php:59
+#: includes/sections/class-alg-wc-atcbl-per-product.php:62
 msgid ""
 "When enabled, label for each product can be set on \"Edit product\" page."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-product.php:63
+#: includes/sections/class-alg-wc-atcbl-per-product.php:66
 msgid "Per product labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:25
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:25
 msgid "Per Product Tag"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:26
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:26
 msgid ""
 "This section lets you set \"Add to cart\" button text on per product tag "
 "basis."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:71
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:71
 #, php-format
 msgid "Tag #%d"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:92
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:92
 msgid "Per Tag Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:98
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:98
 msgid "Per product tag labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:106
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:106
 msgid "Total tag groups"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-tag.php:137
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:137
 msgid "Tags"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:25
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:33
 msgid "Per User Role"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:26
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:34
 msgid ""
 "This section lets you set \"Add to cart\" button text on per user role basis."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:77
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:85
 msgid "Per User Role Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:83
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:91
 msgid "Per user role labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:91
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:99
 msgid "Total user role groups"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:109
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:119
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:117
+#: includes/sections/class-alg-wc-atcbl-per-user.php:127
 #, php-format
 msgid "Group #%d"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user-role.php:122
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:130
 msgid "User roles"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:25
+#: includes/sections/class-alg-wc-atcbl-per-user.php:33
 msgid "Per User"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:26
+#: includes/sections/class-alg-wc-atcbl-per-user.php:34
 msgid ""
 "This section lets you set \"Add to cart\" button text on per user basis."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:87
+#: includes/sections/class-alg-wc-atcbl-per-user.php:95
 msgid "Per User Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:93
+#: includes/sections/class-alg-wc-atcbl-per-user.php:101
 msgid "Per user labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:101
+#: includes/sections/class-alg-wc-atcbl-per-user.php:109
 msgid "Total user groups"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\sections\class-alg-wc-atcbl-per-user.php:132
+#: includes/sections/class-alg-wc-atcbl-per-user.php:140
 msgid "Users"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-general.php:25
+#: includes/settings/class-alg-wc-atcbl-settings-general.php:25
 msgid "General"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-general.php:41
+#: includes/settings/class-alg-wc-atcbl-settings-general.php:41
 msgid "Add to Cart Button Labels Options"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-general.php:46
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-settings-atcbl.php:25
+#: includes/settings/class-alg-wc-atcbl-settings-general.php:46
+#: includes/settings/class-alg-wc-settings-atcbl.php:26
 msgid "Add to Cart Button Labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-general.php:47
+#: includes/settings/class-alg-wc-atcbl-settings-general.php:47
 msgid "Enable plugin"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-general.php:56
+#: includes/settings/class-alg-wc-atcbl-settings-general.php:56
 msgid "Sections"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-meta-boxes.php:52
+#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:54
 msgid "Custom Add to Cart Button Labels"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-section.php:56
+#: includes/settings/class-alg-wc-atcbl-settings-section.php:80
 msgid "Shortcodes"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-atcbl-settings-section.php:59
+#: includes/settings/class-alg-wc-atcbl-settings-section.php:83
 #, php-format
 msgid "You can use shortcodes in all labels: %s"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-settings-atcbl.php:65
+#: includes/settings/class-alg-wc-settings-atcbl.php:70
 msgid "Reset Settings"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-settings-atcbl.php:70
+#: includes/settings/class-alg-wc-settings-atcbl.php:75
 msgid "Reset section settings"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-settings-atcbl.php:71
+#: includes/settings/class-alg-wc-settings-atcbl.php:76
 msgid "Reset"
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-settings-atcbl.php:72
+#: includes/settings/class-alg-wc-settings-atcbl.php:77
 msgid "Check the box and save changes to reset."
 msgstr ""
 
-#: E:\xampp\htdocs\wpfactory-local\wp-content\plugins\add-to-cart-button-labels-for-woocommerce-pro\includes\settings\class-alg-wc-settings-atcbl.php:111
+#: includes/settings/class-alg-wc-settings-atcbl.php:116
 msgid "Your settings have been reset."
 msgstr ""

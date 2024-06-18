@@ -2,17 +2,25 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Per User Class
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   2.0.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Per_User' ) ) :
 
 class Alg_WC_Add_To_Cart_Button_Labels_Per_User extends Alg_WC_Add_To_Cart_Button_Labels_Handler {
+
+	/**
+	 * current_user_id.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $current_user_id;
 
 	/**
 	 * Constructor.
@@ -74,7 +82,7 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_User extends Alg_WC_Add_To_Cart_Butto
 	 * @version 2.0.0
 	 * @since   2.0.0
 	 *
-	 * @todo    [next] (feature) "Admin group title (optional)"
+	 * @todo    (feature) "Admin group title (optional)"
 	 */
 	function get_settings() {
 

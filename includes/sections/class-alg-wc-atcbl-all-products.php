@@ -2,13 +2,13 @@
 /**
  * Add to Cart Button Labels for WooCommerce - All Products Class
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   1.2.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_All_Products' ) ) :
 
@@ -34,7 +34,8 @@ class Alg_WC_Add_To_Cart_Button_Labels_All_Products extends Alg_WC_Add_To_Cart_B
 	 * @since   1.2.0
 	 */
 	function button_text( $text, $single_or_archive ) {
-		return ( '' != ( $label = get_option( 'alg_wc_add_to_cart_button_labels_all_products_' . $single_or_archive, '' ) ) ? $label : $text );
+		return ( '' != ( $label = get_option( 'alg_wc_add_to_cart_button_labels_all_products_' . $single_or_archive, '' ) ) ?
+			$label : $text );
 	}
 
 	/**

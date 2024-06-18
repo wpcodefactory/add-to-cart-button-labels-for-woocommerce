@@ -2,13 +2,13 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Settings
  *
- * @version 2.0.0
+ * @version 2.1.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit; // Exit if accessed directly
 
 if ( ! class_exists( 'Alg_WC_Settings_Add_To_Cart_Button_Labels' ) ) :
 
@@ -21,16 +21,21 @@ class Alg_WC_Settings_Add_To_Cart_Button_Labels extends WC_Settings_Page {
 	 * @since   1.0.0
 	 */
 	function __construct() {
+
 		$this->id    = 'alg_wc_add_to_cart_button_labels';
 		$this->label = __( 'Add to Cart Button Labels', 'add-to-cart-button-labels-for-woocommerce' );
+
 		parent::__construct();
+
 		add_filter( 'woocommerce_admin_settings_sanitize_option', array( $this, 'alg_wc_atcbl_sanitize' ), PHP_INT_MAX, 3 );
+
 		// Sections
 		require_once( 'class-alg-wc-atcbl-settings-section.php' );
 		require_once( 'class-alg-wc-atcbl-settings-general.php' );
 		foreach ( alg_wc_atcbl()->sections as $section ) {
 			$sections[] = new Alg_WC_Add_To_Cart_Button_Labels_Settings_Section( $section );
 		}
+
 	}
 
 	/**

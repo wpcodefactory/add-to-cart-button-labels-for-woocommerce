@@ -2,7 +2,7 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Main Class
  *
- * @version 2.0.3
+ * @version 2.1.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
@@ -21,6 +21,22 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	 * @since 1.0.0
 	 */
 	public $version = ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION;
+
+	/**
+	 * shortcodes.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $shortcodes;
+
+	/**
+	 * sections.
+	 *
+	 * @version 2.1.0
+	 * @since   2.1.0
+	 */
+	public $sections;
 
 	/**
 	 * @var   Alg_WC_Add_To_Cart_Button_Labels The single instance of the class
@@ -85,14 +101,20 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	/**
 	 * wc_declare_compatibility.
 	 *
-	 * @version 2.0.3
+	 * @version 2.1.0
 	 * @since   2.0.3
 	 *
 	 * @see     https://github.com/woocommerce/woocommerce/wiki/High-Performance-Order-Storage-Upgrade-Recipe-Book#declaring-extension-incompatibility
 	 */
 	function wc_declare_compatibility() {
 		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
-			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE, true );
+			$files = ( defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE_FREE' ) ?
+				array( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE, ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE_FREE ) :
+				array( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE )
+			);
+			foreach ( $files as $file ) {
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', $file, true );
+			}
 		}
 	}
 
@@ -112,12 +134,14 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	 * @version 2.0.0
 	 * @since   1.0.0
 	 *
-	 * @todo    [later] (dev) `wpml-config.xml`
-	 * @todo    [later] (dev) store settings as serialized values ("Per Product Type & Condition", "Per Category")
+	 * @todo    (dev) `wpml-config.xml`
+	 * @todo    (dev) store settings as serialized values ("Per Product Type & Condition", "Per Category")
 	 */
 	function includes() {
 		if ( 'yes' === get_option( 'alg_wc_add_to_cart_button_labels_enabled', 'yes' ) ) {
+
 			$this->shortcodes = require_once( 'class-alg-wc-atcbl-shortcodes.php' );
+
 			require_once( 'sections/class-alg-wc-atcbl-handler.php' );
 			$this->sections   = array();
 			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-all-products.php' );
@@ -127,6 +151,7 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-product.php' );
 			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-user-role.php' );
 			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-user.php' );
+
 		}
 	}
 
