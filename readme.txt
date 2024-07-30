@@ -2,8 +2,8 @@
 Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas, kousikmukherjeeli
 Tags: woocommerce, add to cart, woo commerce
 Requires at least: 4.4
-Tested up to: 6.5
-Stable tag: 2.1.0
+Tested up to: 6.6
+Stable tag: 2.1.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,6 +47,10 @@ Plugin is **WPML/Polylang compatible**, i.e., you can set different labels for d
 3. Start by visiting plugin settings at "WooCommerce > Settings > Add to Cart Button Labels".
 
 == Changelog ==
+
+= 2.1.1 - 30/07/2024 =
+* WC tested up to: 9.1.
+* Tested up to: 6.6.
 
 = 2.1.0 - 18/06/2024 =
 * Fix - Declaring HPOS compatibility for the free plugin version, even if the Pro version is activated.
