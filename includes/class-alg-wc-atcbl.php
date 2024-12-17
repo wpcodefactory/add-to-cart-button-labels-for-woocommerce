@@ -2,7 +2,7 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Main Class
  *
- * @version 2.1.0
+ * @version 2.2.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
@@ -65,7 +65,7 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	/**
 	 * Alg_WC_Add_To_Cart_Button_Labels Constructor.
 	 *
-	 * @version 2.0.3
+	 * @version 2.2.0
 	 * @since   1.0.0
 	 *
 	 * @access  public
@@ -77,6 +77,11 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 			return;
 		}
 
+		// Load libs
+		if ( is_admin() ) {
+			require_once plugin_dir_path( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) . 'vendor/autoload.php';
+		}
+
 		// Set up localisation
 		add_action( 'init', array( $this, 'localize' ) );
 
@@ -85,7 +90,7 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 
 		// Pro
 		if ( 'add-to-cart-button-labels-for-woocommerce-pro.php' === basename( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) ) {
-			require_once( 'pro/class-alg-wc-atcbl-pro.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'pro/class-alg-wc-atcbl-pro.php';
 		}
 
 		// Include required files
@@ -125,13 +130,17 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	 * @since   1.3.1
 	 */
 	function localize() {
-		load_plugin_textdomain( 'add-to-cart-button-labels-for-woocommerce', false, dirname( plugin_basename( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) ) . '/langs/' );
+		load_plugin_textdomain(
+			'add-to-cart-button-labels-for-woocommerce',
+			false,
+			dirname( plugin_basename( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) ) . '/langs/'
+		);
 	}
 
 	/**
 	 * Include required core files used in admin and on the frontend.
 	 *
-	 * @version 2.0.0
+	 * @version 2.2.0
 	 * @since   1.0.0
 	 *
 	 * @todo    (dev) `wpml-config.xml`
@@ -140,17 +149,17 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	function includes() {
 		if ( 'yes' === get_option( 'alg_wc_add_to_cart_button_labels_enabled', 'yes' ) ) {
 
-			$this->shortcodes = require_once( 'class-alg-wc-atcbl-shortcodes.php' );
+			$this->shortcodes = require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-atcbl-shortcodes.php';
 
-			require_once( 'sections/class-alg-wc-atcbl-handler.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'sections/class-alg-wc-atcbl-handler.php';
 			$this->sections   = array();
-			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-all-products.php' );
-			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-product-type.php' );
-			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-category.php' );
-			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-tag.php' );
-			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-product.php' );
-			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-user-role.php' );
-			$this->sections[] = require_once( 'sections/class-alg-wc-atcbl-per-user.php' );
+			$this->sections[] = require_once plugin_dir_path( __FILE__ ) . 'sections/class-alg-wc-atcbl-all-products.php';
+			$this->sections[] = require_once plugin_dir_path( __FILE__ ) . 'sections/class-alg-wc-atcbl-per-product-type.php';
+			$this->sections[] = require_once plugin_dir_path( __FILE__ ) . 'sections/class-alg-wc-atcbl-per-category.php';
+			$this->sections[] = require_once plugin_dir_path( __FILE__ ) . 'sections/class-alg-wc-atcbl-per-tag.php';
+			$this->sections[] = require_once plugin_dir_path( __FILE__ ) . 'sections/class-alg-wc-atcbl-per-product.php';
+			$this->sections[] = require_once plugin_dir_path( __FILE__ ) . 'sections/class-alg-wc-atcbl-per-user-role.php';
+			$this->sections[] = require_once plugin_dir_path( __FILE__ ) . 'sections/class-alg-wc-atcbl-per-user.php';
 
 		}
 	}
@@ -158,24 +167,34 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	/**
 	 * admin.
 	 *
-	 * @version 2.0.0
+	 * @version 2.2.0
 	 * @since   1.2.0
 	 */
 	function admin() {
+
 		// Action links
 		add_filter( 'plugin_action_links_' . plugin_basename( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ), array( $this, 'action_links' ) );
+
+		// "Recommendations" page
+		$this->add_cross_selling_library();
+
+		// WC Settings tab as WPFactory submenu item
+		$this->move_wc_settings_tab_to_wpfactory_menu();
+
 		// Settings
 		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
+
 		// Version updated
 		if ( get_option( 'alg_wc_add_to_cart_button_labels_version', '' ) !== $this->version ) {
 			add_action( 'admin_init', array( $this, 'version_updated' ) );
 		}
+
 	}
 
 	/**
 	 * Show action links on the plugin screen.
 	 *
-	 * @version 2.0.0
+	 * @version 2.2.0
 	 * @since   1.0.0
 	 *
 	 * @param   mixed $links
@@ -183,22 +202,72 @@ final class Alg_WC_Add_To_Cart_Button_Labels {
 	 */
 	function action_links( $links ) {
 		$custom_links = array();
-		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_wc_add_to_cart_button_labels' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
+
+		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_wc_add_to_cart_button_labels' ) . '">' .
+			__( 'Settings', 'add-to-cart-button-labels-for-woocommerce' ) .
+		'</a>';
+
 		if ( 'add-to-cart-button-labels-for-woocommerce.php' === basename( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) ) {
 			$custom_links[] = '<a target="_blank" style="font-weight: bold; color: green;" href="https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/">' .
-				__( 'Go Pro', 'add-to-cart-button-labels-for-woocommerce' ) . '</a>';
+				__( 'Go Pro', 'add-to-cart-button-labels-for-woocommerce' ) .
+			'</a>';
 		}
+
 		return array_merge( $custom_links, $links );
+	}
+
+	/**
+	 * add_cross_selling_library.
+	 *
+	 * @version 2.2.0
+	 * @since   2.2.0
+	 */
+	function add_cross_selling_library() {
+
+		if ( ! class_exists( '\WPFactory\WPFactory_Cross_Selling\WPFactory_Cross_Selling' ) ) {
+			return;
+		}
+
+		$cross_selling = new \WPFactory\WPFactory_Cross_Selling\WPFactory_Cross_Selling();
+		$cross_selling->setup( array( 'plugin_file_path' => ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) );
+		$cross_selling->init();
+
+	}
+
+	/**
+	 * move_wc_settings_tab_to_wpfactory_menu.
+	 *
+	 * @version 2.2.0
+	 * @since   2.2.0
+	 */
+	function move_wc_settings_tab_to_wpfactory_menu() {
+
+		if ( ! class_exists( '\WPFactory\WPFactory_Admin_Menu\WPFactory_Admin_Menu' ) ) {
+			return;
+		}
+
+		$wpfactory_admin_menu = \WPFactory\WPFactory_Admin_Menu\WPFactory_Admin_Menu::get_instance();
+
+		if ( ! method_exists( $wpfactory_admin_menu, 'move_wc_settings_tab_to_wpfactory_menu' ) ) {
+			return;
+		}
+
+		$wpfactory_admin_menu->move_wc_settings_tab_to_wpfactory_menu( array(
+			'wc_settings_tab_id' => 'alg_wc_add_to_cart_button_labels',
+			'menu_title'         => __( 'Add to Cart Button Labels', 'add-to-cart-button-labels-for-woocommerce' ),
+			'page_title'         => __( 'Add to Cart Button Labels', 'add-to-cart-button-labels-for-woocommerce' ),
+		) );
+
 	}
 
 	/**
 	 * Add Add to Cart Button Labels settings tab to WooCommerce settings.
 	 *
-	 * @version 2.0.0
+	 * @version 2.2.0
 	 * @since   1.0.0
 	 */
 	function add_woocommerce_settings_tab( $settings ) {
-		$settings[] = require_once( 'settings/class-alg-wc-settings-atcbl.php' );
+		$settings[] = require_once plugin_dir_path( __FILE__ ) . 'settings/class-alg-wc-settings-atcbl.php';
 		return $settings;
 	}
 

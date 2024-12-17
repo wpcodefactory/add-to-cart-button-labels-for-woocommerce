@@ -1,47 +1,21 @@
-# Copyright (C) 2024 WPFactory
-# This file is distributed under the same license as the Customize Add to Cart Button Text for WooCommerce Pro plugin.
-msgid ""
-msgstr ""
-"Project-Id-Version: add-to-cart-button-labels-for-woocommerce 2.1.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/add-to-cart-button-labels-for-woocommerce\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-30T12:53:02+02:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
-"X-Domain: add-to-cart-button-labels-for-woocommerce\n"
-
-#. Plugin Name of the plugin
-msgid "Customize Add to Cart Button Text for WooCommerce Pro"
-msgstr ""
-
-#. Plugin URI of the plugin
-msgid "https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/"
-msgstr ""
-
-#. Description of the plugin
-msgid "Customize \"Add to cart\" button labels in WooCommerce. Beautifully."
-msgstr ""
-
-#. Author of the plugin
-msgid "WPFactory"
-msgstr ""
-
-#. Author URI of the plugin
-msgid "https://wpfactory.com"
-msgstr ""
-
 #: includes/class-alg-wc-atcbl-shortcodes.php:145
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:80
 #: includes/sections/class-alg-wc-atcbl-per-user.php:91
 msgid "Guest"
 msgstr ""
 
-#: includes/class-alg-wc-atcbl.php:189
+#: includes/class-alg-wc-atcbl.php:207
+msgid "Settings"
+msgstr ""
+
+#: includes/class-alg-wc-atcbl.php:212
 msgid "Go Pro"
+msgstr ""
+
+#: includes/class-alg-wc-atcbl.php:257 includes/class-alg-wc-atcbl.php:258
+#: includes/settings/class-alg-wc-atcbl-settings-general.php:46
+#: includes/settings/class-alg-wc-settings-atcbl.php:26
+msgid "Add to Cart Button Labels"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-all-products.php:25
@@ -49,7 +23,9 @@ msgid "All Products"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-all-products.php:26
-msgid "This section lets you set \"Add to cart\" button text for all products at once."
+msgid ""
+"This section lets you set \"Add to cart\" button text for all products at "
+"once."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-all-products.php:50
@@ -61,22 +37,22 @@ msgid "All products labels"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-all-products.php:57
-#: includes/sections/class-alg-wc-atcbl-per-category.php:89
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:252
+#: includes/sections/class-alg-wc-atcbl-per-category.php:99
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:256
 #: includes/sections/class-alg-wc-atcbl-per-product.php:67
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:99
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:103
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:92
 #: includes/sections/class-alg-wc-atcbl-per-user.php:102
 msgid "Enable section"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-all-products.php:63
-#: includes/sections/class-alg-wc-atcbl-per-category.php:139
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:233
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:150
-#: includes/sections/class-alg-wc-atcbl-per-user-role.php:138
-#: includes/sections/class-alg-wc-atcbl-per-user.php:148
-#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:71
+#: includes/sections/class-alg-wc-atcbl-per-category.php:179
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:237
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:180
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:157
+#: includes/sections/class-alg-wc-atcbl-per-user.php:167
+#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:87
 msgid "Single product page"
 msgstr ""
 
@@ -86,12 +62,12 @@ msgid "Ignored if empty."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-all-products.php:72
-#: includes/sections/class-alg-wc-atcbl-per-category.php:147
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:234
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:158
-#: includes/sections/class-alg-wc-atcbl-per-user-role.php:146
-#: includes/sections/class-alg-wc-atcbl-per-user.php:156
-#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:72
+#: includes/sections/class-alg-wc-atcbl-per-category.php:187
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:238
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:188
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:165
+#: includes/sections/class-alg-wc-atcbl-per-user.php:175
+#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:88
 msgid "Shop page"
 msgstr ""
 
@@ -100,59 +76,67 @@ msgid "Per Product Category"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-category.php:26
-msgid "This section lets you set \"Add to cart\" button text on per product category basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per product "
+"category basis."
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:62
+#: includes/sections/class-alg-wc-atcbl-per-category.php:64
+#, php-format
 msgid "Category #%d"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:82
+#: includes/sections/class-alg-wc-atcbl-per-category.php:92
 msgid "Per Category Options"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:88
+#: includes/sections/class-alg-wc-atcbl-per-category.php:98
 msgid "Per product category labels"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:96
+#: includes/sections/class-alg-wc-atcbl-per-category.php:106
 msgid "Total category groups"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:97
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:107
+#: includes/sections/class-alg-wc-atcbl-per-category.php:107
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:111
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:100
 #: includes/sections/class-alg-wc-atcbl-per-user.php:110
 msgid "Click \"Save changes\" after you update this number."
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:115
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:124
-msgid "Group"
+#: includes/sections/class-alg-wc-atcbl-per-category.php:135
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:138
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:127
+#: includes/sections/class-alg-wc-atcbl-per-user.php:137
+#, php-format
+msgid "Group #%d"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:120
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:129
-#: includes/sections/class-alg-wc-atcbl-per-user-role.php:122
-#: includes/sections/class-alg-wc-atcbl-per-user.php:132
+#: includes/sections/class-alg-wc-atcbl-per-category.php:144
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:147
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:136
+#: includes/sections/class-alg-wc-atcbl-per-user.php:146
+#, php-format
 msgid "Enable %s"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:121
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:130
-#: includes/sections/class-alg-wc-atcbl-per-user-role.php:123
-#: includes/sections/class-alg-wc-atcbl-per-user.php:133
+#: includes/sections/class-alg-wc-atcbl-per-category.php:147
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:150
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:139
+#: includes/sections/class-alg-wc-atcbl-per-user.php:149
+#, php-format
 msgid "group #%d"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:122
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:131
-#: includes/sections/class-alg-wc-atcbl-per-user-role.php:124
-#: includes/sections/class-alg-wc-atcbl-per-user.php:134
+#: includes/sections/class-alg-wc-atcbl-per-category.php:151
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:154
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:143
+#: includes/sections/class-alg-wc-atcbl-per-user.php:153
 msgid "Enable"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-category.php:128
+#: includes/sections/class-alg-wc-atcbl-per-category.php:157
 msgid "Categories"
 msgstr ""
 
@@ -161,109 +145,112 @@ msgid "Per Product Type & Condition"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:34
-msgid "This section lets you set \"Add to cart\" button text for various products types and various conditions."
-msgstr ""
-
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:116
-msgid "Ignored if blank."
+msgid ""
+"This section lets you set \"Add to cart\" button text for various products "
+"types and various conditions."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:117
+msgid "Ignored if blank."
+msgstr ""
+
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:120
+#, php-format
 msgid "Default: %s"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:142
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:143
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:146
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:147
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:150
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:151
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:157
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:158
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:163
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:154
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:155
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:161
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:162
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:167
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:171
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:175
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:199
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:205
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:206
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:179
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:203
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:209
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:210
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:213
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:214
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:220
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:221
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:217
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:218
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:224
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:225
 msgid "Add to cart"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:154
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:217
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:158
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:221
 msgid "Read more"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:164
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:168
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:172
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:176
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:180
 msgid "Select options"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:181
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:182
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:185
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:186
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:189
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:190
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:193
 #: includes/sections/class-alg-wc-atcbl-per-product-type.php:194
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:197
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:198
 msgid "Buy product"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:200
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:204
 msgid "View products"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:226
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:230
 msgid "Simple Products"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:227
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:231
 msgid "Variable Products"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:228
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:232
 msgid "External Products"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:229
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:233
 msgid "Grouped Products"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:230
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:234
 msgid "Other Products"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:238
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:242
 msgid "On sale"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:239
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:243
 msgid "Free product"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:240
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:244
 msgid "Empty price"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:241
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:245
 msgid "Already in cart"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:245
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:249
 msgid "Per Product Type & Condition Options"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-product-type.php:251
+#: includes/sections/class-alg-wc-atcbl-per-product-type.php:255
 msgid "Per product type & condition labels"
 msgstr ""
 
@@ -272,7 +259,9 @@ msgid "Per Product"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product.php:26
-msgid "This section lets you set \"Add to cart\" button text on per individual product basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per individual "
+"product basis."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product.php:59
@@ -280,7 +269,8 @@ msgid "Per Product Options"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product.php:62
-msgid "When enabled, label for each product can be set on \"Edit product\" page."
+msgid ""
+"When enabled, label for each product can be set on \"Edit product\" page."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-product.php:66
@@ -292,26 +282,29 @@ msgid "Per Product Tag"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-tag.php:26
-msgid "This section lets you set \"Add to cart\" button text on per product tag basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per product tag "
+"basis."
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:71
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:73
+#, php-format
 msgid "Tag #%d"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:92
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:96
 msgid "Per Tag Options"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:98
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:102
 msgid "Per product tag labels"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:106
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:110
 msgid "Total tag groups"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-tag.php:137
+#: includes/sections/class-alg-wc-atcbl-per-tag.php:160
 msgid "Tags"
 msgstr ""
 
@@ -320,7 +313,8 @@ msgid "Per User Role"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:34
-msgid "This section lets you set \"Add to cart\" button text on per user role basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per user role basis."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user-role.php:85
@@ -335,12 +329,7 @@ msgstr ""
 msgid "Total user role groups"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-user-role.php:117
-#: includes/sections/class-alg-wc-atcbl-per-user.php:127
-msgid "Group #%d"
-msgstr ""
-
-#: includes/sections/class-alg-wc-atcbl-per-user-role.php:130
+#: includes/sections/class-alg-wc-atcbl-per-user-role.php:149
 msgid "User roles"
 msgstr ""
 
@@ -349,7 +338,8 @@ msgid "Per User"
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user.php:34
-msgid "This section lets you set \"Add to cart\" button text on per user basis."
+msgid ""
+"This section lets you set \"Add to cart\" button text on per user basis."
 msgstr ""
 
 #: includes/sections/class-alg-wc-atcbl-per-user.php:95
@@ -364,7 +354,7 @@ msgstr ""
 msgid "Total user groups"
 msgstr ""
 
-#: includes/sections/class-alg-wc-atcbl-per-user.php:140
+#: includes/sections/class-alg-wc-atcbl-per-user.php:159
 msgid "Users"
 msgstr ""
 
@@ -376,11 +366,6 @@ msgstr ""
 msgid "Add to Cart Button Labels Options"
 msgstr ""
 
-#: includes/settings/class-alg-wc-atcbl-settings-general.php:46
-#: includes/settings/class-alg-wc-settings-atcbl.php:26
-msgid "Add to Cart Button Labels"
-msgstr ""
-
 #: includes/settings/class-alg-wc-atcbl-settings-general.php:47
 msgid "Enable plugin"
 msgstr ""
@@ -389,7 +374,7 @@ msgstr ""
 msgid "Sections"
 msgstr ""
 
-#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:54
+#: includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php:69
 msgid "Custom Add to Cart Button Labels"
 msgstr ""
 
@@ -397,7 +382,8 @@ msgstr ""
 msgid "Shortcodes"
 msgstr ""
 
-#: includes/settings/class-alg-wc-atcbl-settings-section.php:83
+#: includes/settings/class-alg-wc-atcbl-settings-section.php:85
+#, php-format
 msgid "You can use shortcodes in all labels: %s"
 msgstr ""
 

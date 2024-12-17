@@ -2,7 +2,7 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Per Category Class
  *
- * @version 2.1.0
+ * @version 2.2.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
@@ -59,13 +59,17 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Category extends Alg_WC_Add_To_Cart_B
 	 * @since   2.0.0
 	 */
 	function get_settings_lost_term_name( $value ) {
-		return sprintf( __( 'Category #%d', 'add-to-cart-button-labels-for-woocommerce' ), $value );
+		return sprintf(
+			/* Translators: %d: Category ID. */
+			__( 'Category #%d', 'add-to-cart-button-labels-for-woocommerce' ),
+			$value
+		);
 	}
 
 	/**
 	 * get_settings.
 	 *
-	 * @version 2.0.0
+	 * @version 2.2.0
 	 * @since   1.0.0
 	 *
 	 * @todo    (dev) WPML: `suppress_filter`?
@@ -74,8 +78,14 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Category extends Alg_WC_Add_To_Cart_B
 	function get_settings() {
 
 		$product_cats = get_terms( array( 'taxonomy' => 'product_cat', 'hide_empty' => false ) );
-		$product_cats = ( ! empty( $product_cats ) && ! is_wp_error( $product_cats ) ?
-			array_combine( wp_list_pluck( $product_cats, 'term_id' ), wp_list_pluck( $product_cats, 'name' ) ) : array() );
+		$product_cats = (
+			! empty( $product_cats ) && ! is_wp_error( $product_cats ) ?
+			array_combine(
+				wp_list_pluck( $product_cats, 'term_id' ),
+				wp_list_pluck( $product_cats, 'name' )
+			) :
+			array()
+		);
 
 		$settings = array(
 			array(
@@ -93,15 +103,23 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Category extends Alg_WC_Add_To_Cart_B
 				'type'     => 'checkbox',
 			),
 			array(
-				'title'    => __( 'Total category groups', 'add-to-cart-button-labels-for-woocommerce' ),
-				'desc_tip' => __( 'Click "Save changes" after you update this number.', 'add-to-cart-button-labels-for-woocommerce' ),
-				'id'       => 'alg_wc_add_to_cart_button_labels_per_category_total_number',
-				'default'  => 1,
-				'type'     => 'number',
-				'desc'     => apply_filters( 'alg_wc_add_to_cart_button_labels_settings', sprintf(
-					'You will need <a target="_blank" href="%s">Add to Cart Button Labels for WooCommerce Pro</a> plugin to add more than one category group.',
-						'https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/' ) ),
-				'custom_attributes' => apply_filters( 'alg_wc_add_to_cart_button_labels_settings', array( 'step' => '1', 'min' => '1', 'max' => '1' ), 'array' ),
+				'title'             => __( 'Total category groups', 'add-to-cart-button-labels-for-woocommerce' ),
+				'desc_tip'          => __( 'Click "Save changes" after you update this number.', 'add-to-cart-button-labels-for-woocommerce' ),
+				'id'                => 'alg_wc_add_to_cart_button_labels_per_category_total_number',
+				'default'           => 1,
+				'type'              => 'number',
+				'desc'              => apply_filters(
+					'alg_wc_add_to_cart_button_labels_settings',
+					sprintf(
+						'You will need <a target="_blank" href="%s">Add to Cart Button Labels for WooCommerce Pro</a> plugin to add more than one category group.',
+						'https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/'
+					)
+				),
+				'custom_attributes' => apply_filters(
+					'alg_wc_add_to_cart_button_labels_settings',
+					array( 'step' => '1', 'min' => '1', 'max' => '1' ),
+					'array'
+				),
 			),
 			array(
 				'type'     => 'sectionend',
@@ -112,13 +130,24 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Category extends Alg_WC_Add_To_Cart_B
 			$_product_cats = get_option( 'alg_wc_add_to_cart_per_category_ids_group_' . $i, array() );
 			$settings = array_merge( $settings, array(
 				array(
-					'title'    => __( 'Group', 'add-to-cart-button-labels-for-woocommerce' ) . ' #' . $i,
+					'title'    => sprintf(
+						/* Translators: %d: Group ID. */
+						__( 'Group #%d', 'add-to-cart-button-labels-for-woocommerce' ),
+						$i
+					),
 					'type'     => 'title',
 					'id'       => 'alg_wc_add_to_cart_per_category_options_group_' . $i,
 				),
 				array(
-					'title'    => sprintf( __( 'Enable %s', 'add-to-cart-button-labels-for-woocommerce' ),
-						sprintf( __( 'group #%d', 'add-to-cart-button-labels-for-woocommerce' ), $i ) ),
+					'title'    => sprintf(
+						/* Translators: %s: Group title. */
+						__( 'Enable %s', 'add-to-cart-button-labels-for-woocommerce' ),
+						sprintf(
+							/* Translators: %d: Group ID. */
+							__( 'group #%d', 'add-to-cart-button-labels-for-woocommerce' ),
+							$i
+						)
+					),
 					'desc'     => __( 'Enable', 'add-to-cart-button-labels-for-woocommerce' ),
 					'id'       => 'alg_wc_add_to_cart_per_category_enabled_group_' . $i,
 					'default'  => 'yes',
@@ -131,24 +160,35 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Category extends Alg_WC_Add_To_Cart_B
 					'type'     => 'multiselect',
 					'class'    => 'chosen_select',
 					'options'  => $product_cats,
-					'options'  => ( ! empty( $_product_cats ) ?
-						array_replace( array_combine( $_product_cats, array_map( array( $this, 'get_settings_lost_term_name' ), $_product_cats ) ), $product_cats ) :
-						$product_cats ),
+					'options'  => (
+						! empty( $_product_cats ) ?
+						array_replace(
+							array_combine(
+								$_product_cats,
+								array_map(
+									array( $this, 'get_settings_lost_term_name' ),
+									$_product_cats
+								)
+							),
+							$product_cats
+						) :
+						$product_cats
+					),
 				),
 				array(
-					'title'    => __( 'Single product page', 'add-to-cart-button-labels-for-woocommerce' ),
-					'id'       => 'alg_wc_add_to_cart_per_category_text_single_group_' . $i,
-					'default'  => '',
-					'type'     => 'text',
-					'css'      => 'width:100%;',
+					'title'                 => __( 'Single product page', 'add-to-cart-button-labels-for-woocommerce' ),
+					'id'                    => 'alg_wc_add_to_cart_per_category_text_single_group_' . $i,
+					'default'               => '',
+					'type'                  => 'text',
+					'css'                   => 'width:100%;',
 					'alg_wc_atcbl_sanitize' => 'textarea',
 				),
 				array(
-					'title'    => __( 'Shop page', 'add-to-cart-button-labels-for-woocommerce' ),
-					'id'       => 'alg_wc_add_to_cart_per_category_text_archive_group_' . $i,
-					'default'  => '',
-					'type'     => 'text',
-					'css'      => 'width:100%;',
+					'title'                 => __( 'Shop page', 'add-to-cart-button-labels-for-woocommerce' ),
+					'id'                    => 'alg_wc_add_to_cart_per_category_text_archive_group_' . $i,
+					'default'               => '',
+					'type'                  => 'text',
+					'css'                   => 'width:100%;',
 					'alg_wc_atcbl_sanitize' => 'textarea',
 				),
 				array(

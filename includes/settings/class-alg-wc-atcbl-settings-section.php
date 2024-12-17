@@ -8,7 +8,7 @@
  * @author  Algoritmika Ltd.
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Settings_Section' ) ) :
 
@@ -80,8 +80,13 @@ class Alg_WC_Add_To_Cart_Button_Labels_Settings_Section {
 						'title'    => __( 'Shortcodes', 'add-to-cart-button-labels-for-woocommerce' ),
 						'type'     => 'title',
 						'id'       => 'alg_wc_add_to_cart_button_labels_shortcodes',
-						'desc'     => sprintf( __( 'You can use shortcodes in all labels: %s', 'add-to-cart-button-labels-for-woocommerce' ),
-							'<pre>' . '[alg_wc_atcbl_' . implode( '], [alg_wc_atcbl_', alg_wc_atcbl()->shortcodes->shortcodes ) . ']' . '</pre>' ),
+						'desc'     => sprintf(
+							/* Translators: %s: Shortcode list. */
+							__( 'You can use shortcodes in all labels: %s', 'add-to-cart-button-labels-for-woocommerce' ),
+							'<pre>' .
+								'[alg_wc_atcbl_' . implode( '], [alg_wc_atcbl_', alg_wc_atcbl()->shortcodes->shortcodes ) . ']' .
+							'</pre>'
+						),
 					),
 					array(
 						'type'     => 'sectionend',

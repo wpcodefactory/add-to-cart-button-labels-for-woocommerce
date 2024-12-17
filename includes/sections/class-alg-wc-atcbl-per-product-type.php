@@ -8,7 +8,7 @@
  * @author  Algoritmika Ltd.
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Per_Product_Type' ) ) :
 
@@ -113,9 +113,13 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Product_Type extends Alg_WC_Add_To_Ca
 	 * @since   1.2.0
 	 */
 	function get_settings_desc_tip( $single_or_archives, $product_type, $condition ) {
-		return __( 'Ignored if blank.', 'add-to-cart-button-labels-for-woocommerce' ) . '<br>' .
-			sprintf( __( 'Default: %s', 'add-to-cart-button-labels-for-woocommerce' ),
-				'<em>' . $this->get_settings_default_label_value( $single_or_archives, $product_type, $condition ) . '</em>' );
+		return
+			__( 'Ignored if blank.', 'add-to-cart-button-labels-for-woocommerce' ) . '<br>' .
+			sprintf(
+				/* Translators: %s: Default label. */
+				__( 'Default: %s', 'add-to-cart-button-labels-for-woocommerce' ),
+				'<em>' . $this->get_settings_default_label_value( $single_or_archives, $product_type, $condition ) . '</em>'
+			);
 	}
 
 	/**
@@ -269,16 +273,31 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Product_Type extends Alg_WC_Add_To_Ca
 				foreach ( $views as $view_id => $view_desc ) {
 					if ( '' !== $this->get_settings_default_label_value( $view_id, $product_type_id, $condition_id ) ) {
 						$settings[] = array(
-							'title'    => $view_desc . ( '' != $condition_desc ? ': ' . $condition_desc : '' ),
-							'id'       => 'alg_wc_add_to_cart_p_prod_type_on_' . $view_id . $condition_id . '_' . $product_type_id,
-							'desc_tip' => $this->get_settings_desc_tip( $view_id, $product_type_id, $condition_id ),
-							'default'  => '',
-							'type'     => 'text',
-							'css'      => 'width:100%;',
-							'desc'     => ( '_on_sale' === $condition_id ? apply_filters( 'alg_wc_add_to_cart_button_labels_settings', sprintf(
-								'You will need <a target="_blank" href="%s">Add to Cart Button Labels for WooCommerce Pro</a> plugin to set separate label for "On sale" condition.',
-									'https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/' ) ) : '' ),
-							'custom_attributes' => ( '_on_sale' === $condition_id ? apply_filters( 'alg_wc_add_to_cart_button_labels_settings', array( 'readonly' => 'readonly' ) ) : '' ),
+							'title'                 => $view_desc . ( '' != $condition_desc ? ': ' . $condition_desc : '' ),
+							'id'                    => 'alg_wc_add_to_cart_p_prod_type_on_' . $view_id . $condition_id . '_' . $product_type_id,
+							'desc_tip'              => $this->get_settings_desc_tip( $view_id, $product_type_id, $condition_id ),
+							'default'               => '',
+							'type'                  => 'text',
+							'css'                   => 'width:100%;',
+							'desc'                  => (
+								'_on_sale' === $condition_id ?
+								apply_filters(
+									'alg_wc_add_to_cart_button_labels_settings',
+									sprintf(
+										'You will need <a target="_blank" href="%s">Add to Cart Button Labels for WooCommerce Pro</a> plugin to set separate label for "On sale" condition.',
+										'https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/'
+									)
+								) :
+								''
+							),
+							'custom_attributes'     => (
+								'_on_sale' === $condition_id ?
+								apply_filters(
+									'alg_wc_add_to_cart_button_labels_settings',
+									array( 'readonly' => 'readonly' )
+								) :
+								''
+							),
 							'alg_wc_atcbl_sanitize' => 'textarea',
 						);
 					}

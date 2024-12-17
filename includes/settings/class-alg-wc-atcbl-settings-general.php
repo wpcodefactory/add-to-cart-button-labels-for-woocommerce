@@ -8,7 +8,7 @@
  * @author  Algoritmika Ltd.
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Add_To_Cart_Button_Labels_Settings_General' ) ) :
 

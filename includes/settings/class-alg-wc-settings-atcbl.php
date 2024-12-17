@@ -2,13 +2,13 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Settings
  *
- * @version 2.1.0
+ * @version 2.2.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
  */
 
-defined( 'ABSPATH' ) || exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
 if ( ! class_exists( 'Alg_WC_Settings_Add_To_Cart_Button_Labels' ) ) :
 
@@ -17,7 +17,7 @@ class Alg_WC_Settings_Add_To_Cart_Button_Labels extends WC_Settings_Page {
 	/**
 	 * Constructor.
 	 *
-	 * @version 2.0.0
+	 * @version 2.2.0
 	 * @since   1.0.0
 	 */
 	function __construct() {
@@ -30,8 +30,8 @@ class Alg_WC_Settings_Add_To_Cart_Button_Labels extends WC_Settings_Page {
 		add_filter( 'woocommerce_admin_settings_sanitize_option', array( $this, 'alg_wc_atcbl_sanitize' ), PHP_INT_MAX, 3 );
 
 		// Sections
-		require_once( 'class-alg-wc-atcbl-settings-section.php' );
-		require_once( 'class-alg-wc-atcbl-settings-general.php' );
+		require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-atcbl-settings-section.php';
+		require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-atcbl-settings-general.php';
 		foreach ( alg_wc_atcbl()->sections as $section ) {
 			$sections[] = new Alg_WC_Add_To_Cart_Button_Labels_Settings_Section( $section );
 		}
@@ -108,12 +108,13 @@ class Alg_WC_Settings_Add_To_Cart_Button_Labels extends WC_Settings_Page {
 	/**
 	 * admin_notice_settings_reset.
 	 *
-	 * @version 1.2.1
+	 * @version 2.2.0
 	 * @since   1.2.1
 	 */
 	function admin_notice_settings_reset() {
 		echo '<div class="notice notice-warning is-dismissible"><p><strong>' .
-			__( 'Your settings have been reset.', 'add-to-cart-button-labels-for-woocommerce' ) . '</strong></p></div>';
+			esc_html__( 'Your settings have been reset.', 'add-to-cart-button-labels-for-woocommerce' ) .
+		'</strong></p></div>';
 	}
 
 	/**

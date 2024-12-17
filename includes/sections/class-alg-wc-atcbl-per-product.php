@@ -2,7 +2,7 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Per Product Class
  *
- * @version 2.1.0
+ * @version 2.2.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
@@ -17,7 +17,7 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Product extends Alg_WC_Add_To_Cart_Bu
 	/**
 	 * Constructor.
 	 *
-	 * @version 2.0.0
+	 * @version 2.2.0
 	 * @since   1.0.0
 	 */
 	function __construct() {
@@ -26,8 +26,8 @@ class Alg_WC_Add_To_Cart_Button_Labels_Per_Product extends Alg_WC_Add_To_Cart_Bu
 		$this->desc  = __( 'This section lets you set "Add to cart" button text on per individual product basis.', 'add-to-cart-button-labels-for-woocommerce' );
 		parent::__construct();
 		if ( is_admin() && $this->is_enabled() ) {
-			require_once( untrailingslashit( plugin_dir_path( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) ) .
-				'/includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php' );
+			require_once untrailingslashit( plugin_dir_path( ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE ) ) .
+				'/includes/settings/class-alg-wc-atcbl-settings-meta-boxes.php';
 		}
 	}
 

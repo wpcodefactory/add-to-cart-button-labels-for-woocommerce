@@ -103,7 +103,7 @@ class Alg_WC_Add_To_Cart_Button_Labels_Shortcodes {
 	 */
 	function product_price( $atts, $content = '' ) {
 		global $product;
-		return ( $product ? strip_tags( wc_price( $product->get_price() ) ) : '' );
+		return ( $product ? strip_tags( wc_price( $product->get_price() ) ) : '' ); // phpcs:ignore WordPress.WP.AlternativeFunctions.strip_tags_strip_tags
 	}
 
 	/**

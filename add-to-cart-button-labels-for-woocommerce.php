@@ -1,15 +1,17 @@
 <?php
 /*
-Plugin Name: Customize Add to Cart Button Text for WooCommerce
+Plugin Name: Change Add to Cart Button Text for WooCommerce
 Plugin URI: https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/
 Description: Customize "Add to cart" button labels in WooCommerce. Beautifully.
-Version: 2.1.1
+Version: 2.2.0
 Author: WPFactory
 Author URI: https://wpfactory.com
 Text Domain: add-to-cart-button-labels-for-woocommerce
 Domain Path: /langs
-WC tested up to: 9.1
+WC tested up to: 9.4
 Requires Plugins: woocommerce
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 
 defined( 'ABSPATH' ) || exit;
@@ -31,11 +33,11 @@ if ( 'add-to-cart-button-labels-for-woocommerce.php' === basename( __FILE__ ) ) 
 	}
 }
 
-defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION' ) || define( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION', '2.1.1' );
+defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION' ) || define( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION', '2.2.0' );
 
 defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE' ) || define( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_FILE', __FILE__ );
 
-require_once( 'includes/class-alg-wc-atcbl.php' );
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-alg-wc-atcbl.php';
 
 if ( ! function_exists( 'alg_wc_atcbl' ) ) {
 	/**
