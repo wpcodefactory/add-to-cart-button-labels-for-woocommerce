@@ -22,4 +22,4 @@ if (PHP_VERSION_ID < 50600) {
 
 require_once __DIR__ . '/composer/autoload_real.php';
 
-return ComposerAutoloaderInit975a31b1bba1e5b13ef53e6b3d59cf0b::getLoader();
+return ComposerAutoloaderInitWPFactoryAddToCartButtonLabelsForWooCommerce::getLoader();

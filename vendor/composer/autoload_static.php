@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit975a31b1bba1e5b13ef53e6b3d59cf0b
+class ComposerStaticInitWPFactoryAddToCartButtonLabelsForWooCommerce
 {
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -20,7 +20,7 @@ class ComposerStaticInit975a31b1bba1e5b13ef53e6b3d59cf0b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit975a31b1bba1e5b13ef53e6b3d59cf0b::$classMap;
+            $loader->classMap = ComposerStaticInitWPFactoryAddToCartButtonLabelsForWooCommerce::$classMap;
 
         }, null, ClassLoader::class);
     }
