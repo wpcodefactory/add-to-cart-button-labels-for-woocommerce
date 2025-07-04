@@ -2,35 +2,41 @@
 # This file is distributed under the GNU General Public License v3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: add-to-cart-button-labels-for-woocommerce 2.2.3\n"
+"Project-Id-Version: Change Add to Cart Button Text for WooCommerce 2.2.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/add-to-cart-button-labels-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-12T21:14:03+02:00\n"
+"POT-Creation-Date: 2025-07-04T18:21:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.7.1\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: add-to-cart-button-labels-for-woocommerce\n"
 
 #. Plugin Name of the plugin
-msgid "Change Add to Cart Button Text for WooCommerce Pro"
+#: add-to-cart-button-labels-for-woocommerce.php
+#: includes/class-alg-wc-atcbl.php:266
+msgid "Change Add to Cart Button Text for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: add-to-cart-button-labels-for-woocommerce.php
 msgid "https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/"
 msgstr ""
 
 #. Description of the plugin
+#: add-to-cart-button-labels-for-woocommerce.php
 msgid "Customize \"Add to cart\" button labels in WooCommerce. Beautifully."
 msgstr ""
 
 #. Author of the plugin
+#: add-to-cart-button-labels-for-woocommerce.php
 msgid "WPFactory"
 msgstr ""
 
 #. Author URI of the plugin
+#: add-to-cart-button-labels-for-woocommerce.php
 msgid "https://wpfactory.com"
 msgstr ""
 
@@ -40,16 +46,15 @@ msgstr ""
 msgid "Guest"
 msgstr ""
 
-#: includes/class-alg-wc-atcbl.php:207
+#: includes/class-alg-wc-atcbl.php:215
 msgid "Settings"
 msgstr ""
 
-#: includes/class-alg-wc-atcbl.php:212
+#: includes/class-alg-wc-atcbl.php:220
 msgid "Go Pro"
 msgstr ""
 
-#: includes/class-alg-wc-atcbl.php:257
-#: includes/class-alg-wc-atcbl.php:258
+#: includes/class-alg-wc-atcbl.php:265
 #: includes/settings/class-alg-wc-atcbl-settings-general.php:46
 #: includes/settings/class-alg-wc-settings-atcbl.php:26
 msgid "Add to Cart Button Labels"

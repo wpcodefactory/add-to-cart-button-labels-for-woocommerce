@@ -3,7 +3,7 @@ Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas
 Tags: woocommerce, add to cart, woo commerce
 Requires at least: 4.4
 Tested up to: 6.8
-Stable tag: 2.2.3
+Stable tag: 2.2.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,12 +44,21 @@ Plugin is **WPML/Polylang compatible**, i.e., you can set different labels for d
 
 1. Upload the entire plugin folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the "Plugins" menu in WordPress.
-3. Start by visiting plugin settings at "WooCommerce > Settings > Add to Cart Button Labels".
+3. Start by visiting plugin settings at "WPFactory > Add to Cart Button Labels".
 
 == Changelog ==
 
+= 2.2.4 - 04/07/2025 =
+* Fix - Translation loading.
+* Dev - WPFactory Admin Menu - Icon added.
+* Dev - WPFactory Admin Menu - Moved to the `init` hook.
+* Dev - WPFactory Key Manager - Moved to the `init` hook.
+* Dev - WPFactory Recommendations - Moved to the `init` hook.
+* Dev - WPFactory Admin Menu - Library updated.
+* WC tested up to: 9.9.
+
 = 2.2.3 - 12/05/2025 =
-* Fix - Vulnerability in the 'alg_wc_atcbl_translate' shortcode.
+* Fix - Vulnerability in the `[alg_wc_atcbl_translate]` shortcode.
 * Tested up to: 6.8.
 * WC tested up to: 9.8.
 
