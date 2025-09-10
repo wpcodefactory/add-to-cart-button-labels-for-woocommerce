@@ -1,9 +1,9 @@
 === Change Add to Cart Button Text for WooCommerce ===
-Contributors: wpcodefactory, algoritmika, anbinder, karzin, omardabbas
+Contributors: wpcodefactory, anbinder, karzin, omardabbas
 Tags: woocommerce, add to cart, woo commerce
 Requires at least: 4.4
 Tested up to: 6.8
-Stable tag: 2.2.4
+Stable tag: 2.2.5
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,6 +47,9 @@ Plugin is **WPML/Polylang compatible**, i.e., you can set different labels for d
 3. Start by visiting plugin settings at "WPFactory > Add to Cart Button Labels".
 
 == Changelog ==
+
+= 2.2.5 - 10/09/2025 =
+* WC tested up to: 10.1.
 
 = 2.2.4 - 04/07/2025 =
 * Fix - Translation loading.
