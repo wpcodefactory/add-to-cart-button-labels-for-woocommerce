@@ -2,134 +2,148 @@
 /**
  * Add to Cart Button Labels for WooCommerce - Settings
  *
- * @version 2.2.0
+ * @version 2.3.0
  * @since   1.0.0
  *
- * @author  Algoritmika Ltd.
+ * @author WPFactory
+ *
+ * @package WPFactory\WC_Add_To_Cart_Button_Labels\Settings
  */
 
 defined( 'ABSPATH' ) || exit;
 
-if ( ! class_exists( 'Alg_WC_Settings_Add_To_Cart_Button_Labels' ) ) :
-
-class Alg_WC_Settings_Add_To_Cart_Button_Labels extends WC_Settings_Page {
+if ( ! class_exists( 'Alg_WC_Settings_ATCBL' ) ) :
 
 	/**
-	 * Constructor.
+	 * Alg_WC_Settings_ATCBL class.
 	 *
-	 * @version 2.2.0
+	 * @version 2.3.0
 	 * @since   1.0.0
 	 */
-	function __construct() {
+	class Alg_WC_Settings_ATCBL extends WC_Settings_Page {
 
-		$this->id    = 'alg_wc_add_to_cart_button_labels';
-		$this->label = __( 'Add to Cart Button Labels', 'add-to-cart-button-labels-for-woocommerce' );
+		/**
+		 * Constructor.
+		 *
+		 * @version 2.3.0
+		 * @since   1.0.0
+		 */
+		public function __construct() {
+			$this->id    = 'alg_wc_add_to_cart_button_labels';
+			$this->label = __( 'Add to Cart Button Labels', 'add-to-cart-button-labels-for-woocommerce' );
 
-		parent::__construct();
+			parent::__construct();
 
-		add_filter( 'woocommerce_admin_settings_sanitize_option', array( $this, 'alg_wc_atcbl_sanitize' ), PHP_INT_MAX, 3 );
+			add_filter( 'woocommerce_admin_settings_sanitize_option', array( $this, 'alg_wc_atcbl_sanitize' ), PHP_INT_MAX, 3 );
 
-		// Sections
-		require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-atcbl-settings-section.php';
-		require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-atcbl-settings-general.php';
-		foreach ( alg_wc_atcbl()->sections as $section ) {
-			$sections[] = new Alg_WC_Add_To_Cart_Button_Labels_Settings_Section( $section );
-		}
-
-	}
-
-	/**
-	 * alg_wc_atcbl_sanitize.
-	 *
-	 * @version 2.0.0
-	 * @since   1.2.0
-	 */
-	function alg_wc_atcbl_sanitize( $value, $option, $raw_value ) {
-		if ( ! empty( $option['alg_wc_atcbl_sanitize'] ) ) {
-			switch ( $option['alg_wc_atcbl_sanitize'] ) {
-				case 'textarea':
-					return wp_kses_post( trim( $raw_value ) );
-				default:
-					$func = $option['alg_wc_atcbl_sanitize'];
-					return ( function_exists( $func ) ? $func( $raw_value ) : $value );
+			// Sections.
+			require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-atcbl-settings-section.php';
+			require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-atcbl-settings-general.php';
+			foreach ( alg_wc_atcbl()->sections as $section ) {
+				$sections[] = new Alg_WC_ATCBL_Settings_Section( $section );
 			}
 		}
-		return $value;
-	}
 
-	/**
-	 * get_settings.
-	 *
-	 * @version 1.3.0
-	 * @since   1.0.0
-	 */
-	function get_settings() {
-		global $current_section;
-		return array_merge( apply_filters( 'woocommerce_get_settings_' . $this->id . '_' . $current_section, array() ), array(
-			array(
-				'title'     => __( 'Reset Settings', 'add-to-cart-button-labels-for-woocommerce' ),
-				'type'      => 'title',
-				'id'        => $this->id . '_' . $current_section . '_reset_options',
-			),
-			array(
-				'title'     => __( 'Reset section settings', 'add-to-cart-button-labels-for-woocommerce' ),
-				'desc'      => '<strong>' . __( 'Reset', 'add-to-cart-button-labels-for-woocommerce' ) . '</strong>',
-				'desc_tip'  => __( 'Check the box and save changes to reset.', 'add-to-cart-button-labels-for-woocommerce' ),
-				'id'        => $this->id . '_' . $current_section . '_reset',
-				'default'   => 'no',
-				'type'      => 'checkbox',
-			),
-			array(
-				'type'      => 'sectionend',
-				'id'        => $this->id . '_' . $current_section . '_reset_options',
-			),
-		) );
-	}
-
-	/**
-	 * maybe_reset_settings.
-	 *
-	 * @version 1.2.1
-	 * @since   1.0.0
-	 */
-	function maybe_reset_settings() {
-		global $current_section;
-		if ( 'yes' === get_option( $this->id . '_' . $current_section . '_reset', 'no' ) ) {
-			foreach ( $this->get_settings() as $value ) {
-				if ( isset( $value['id'] ) ) {
-					$id = explode( '[', $value['id'] );
-					delete_option( $id[0] );
+		/**
+		 * Sanitize.
+		 *
+		 * @version 2.0.0
+		 * @since   1.2.0
+		 *
+		 * @param mixed $value     The sanitized value.
+		 * @param array $option    The option array.
+		 * @param mixed $raw_value The raw value.
+		 *
+		 * @return mixed The sanitized value.
+		 */
+		public function alg_wc_atcbl_sanitize( $value, $option, $raw_value ) {
+			if ( ! empty( $option['alg_wc_atcbl_sanitize'] ) ) {
+				switch ( $option['alg_wc_atcbl_sanitize'] ) {
+					case 'textarea':
+						return wp_kses_post( trim( $raw_value ) );
+					default:
+						$func = $option['alg_wc_atcbl_sanitize'];
+						return ( function_exists( $func ) ? $func( $raw_value ) : $value );
 				}
 			}
-			add_action( 'admin_notices', array( $this, 'admin_notice_settings_reset' ) );
+			return $value;
+		}
+
+		/**
+		 * Get settings.
+		 *
+		 * @version 1.3.0
+		 * @since   1.0.0
+		 */
+		public function get_settings() {
+			global $current_section;
+			return array_merge(
+				apply_filters( 'woocommerce_get_settings_' . $this->id . '_' . $current_section, array() ), // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
+				array(
+					array(
+						'title' => __( 'Reset Settings', 'add-to-cart-button-labels-for-woocommerce' ),
+						'type'  => 'title',
+						'id'    => $this->id . '_' . $current_section . '_reset_options',
+					),
+					array(
+						'title'    => __( 'Reset section settings', 'add-to-cart-button-labels-for-woocommerce' ),
+						'desc'     => '<strong>' . __( 'Reset', 'add-to-cart-button-labels-for-woocommerce' ) . '</strong>',
+						'desc_tip' => __( 'Check the box and save changes to reset.', 'add-to-cart-button-labels-for-woocommerce' ),
+						'id'       => $this->id . '_' . $current_section . '_reset',
+						'default'  => 'no',
+						'type'     => 'checkbox',
+					),
+					array(
+						'type' => 'sectionend',
+						'id'   => $this->id . '_' . $current_section . '_reset_options',
+					),
+				)
+			);
+		}
+
+		/**
+		 * Maybe reset settings.
+		 *
+		 * @version 1.2.1
+		 * @since   1.0.0
+		 */
+		public function maybe_reset_settings() {
+			global $current_section;
+			if ( 'yes' === get_option( $this->id . '_' . $current_section . '_reset', 'no' ) ) {
+				foreach ( $this->get_settings() as $value ) {
+					if ( isset( $value['id'] ) ) {
+						$id = explode( '[', $value['id'] );
+						delete_option( $id[0] );
+					}
+				}
+				add_action( 'admin_notices', array( $this, 'admin_notice_settings_reset' ) );
+			}
+		}
+
+		/**
+		 * Admin notice settings reset.
+		 *
+		 * @version 2.2.0
+		 * @since   1.2.1
+		 */
+		public function admin_notice_settings_reset() {
+			echo '<div class="notice notice-warning is-dismissible"><p><strong>' .
+				esc_html__( 'Your settings have been reset.', 'add-to-cart-button-labels-for-woocommerce' ) .
+			'</strong></p></div>';
+		}
+
+		/**
+		 * Save settings.
+		 *
+		 * @version 1.0.0
+		 * @since   1.0.0
+		 */
+		public function save() {
+			parent::save();
+			$this->maybe_reset_settings();
 		}
 	}
-
-	/**
-	 * admin_notice_settings_reset.
-	 *
-	 * @version 2.2.0
-	 * @since   1.2.1
-	 */
-	function admin_notice_settings_reset() {
-		echo '<div class="notice notice-warning is-dismissible"><p><strong>' .
-			esc_html__( 'Your settings have been reset.', 'add-to-cart-button-labels-for-woocommerce' ) .
-		'</strong></p></div>';
-	}
-
-	/**
-	 * Save settings.
-	 *
-	 * @version 1.0.0
-	 * @since   1.0.0
-	 */
-	function save() {
-		parent::save();
-		$this->maybe_reset_settings();
-	}
-
-}
 
 endif;
 
-return new Alg_WC_Settings_Add_To_Cart_Button_Labels();
+return new Alg_WC_Settings_ATCBL();

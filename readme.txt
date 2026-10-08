@@ -2,8 +2,9 @@
 Contributors: wpcodefactory, anbinder, karzin, omardabbas
 Tags: woocommerce, add to cart, woo commerce
 Requires at least: 4.4
-Tested up to: 7.0
-Stable tag: 2.2.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Stable tag: 2.3.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -47,6 +48,22 @@ Plugin is **WPML/Polylang compatible**, i.e., you can set different labels for d
 3. Start by visiting plugin settings at "WPFactory > Add to Cart Button Labels".
 
 == Changelog ==
+
+= 2.3.0 - 08/10/2026 =
+* Dev - Nonces added.
+* Dev - User capability checks added.
+* Dev - Shortcodes - Output escaped.
+* Dev - Shortcodes - `[alg_wc_atcbl_product_func]` - `alg_wc_add_to_cart_button_labels_shortcode_allowed_functions` filter added.
+* Dev - The free plugin version can now handle an unlimited number of per category, per tag, per user, and per user role groups.
+* Dev - The free plugin version can now handle a separate label for the "On sale" condition.
+* Dev - Code refactoring.
+* Dev - Coding standards improved.
+* Dev - WPFactory Admin Menu - Library updated (to v1.1.3).
+* Dev - WPFactory Cross-Selling - Library updated (to v1.1.7).
+* Dev - WPFactory Key Manager - Library updated (to v1.1.1).
+* WC tested up to: 11.1.
+* Tested up to: 7.1.
+* Requires PHP: 7.4.
 
 = 2.2.6 - 24/05/2026 =
 * Tested up to: 7.0.
