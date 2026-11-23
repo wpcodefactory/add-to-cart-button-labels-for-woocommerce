@@ -3,13 +3,13 @@
  * Plugin Name: Change Add to Cart Button Text for WooCommerce
  * Plugin URI: https://wpfactory.com/item/add-to-cart-button-labels-woocommerce/
  * Description: Customize "Add to cart" button labels in WooCommerce. Beautifully.
- * Version: 2.3.0
+ * Version: 2.3.1
  * Author: WPFactory
  * Author URI: https://wpfactory.com
  * Requires PHP: 7.4
  * Text Domain: add-to-cart-button-labels-for-woocommerce
  * Domain Path: /langs
- * WC tested up to: 11.1
+ * WC tested up to: 11.3
  * Requires Plugins: woocommerce
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -48,7 +48,7 @@ if ( 'add-to-cart-button-labels-for-woocommerce.php' === basename( __FILE__ ) ) 
 /**
  * Plugin version.
  */
-defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION' ) || define( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION', '2.3.0' );
+defined( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION' ) || define( 'ALG_WC_ADD_TO_CART_BUTTON_LABELS_VERSION', '2.3.1' );
 
 /**
  * Plugin file.
